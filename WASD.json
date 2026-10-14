@@ -1,0 +1,195 @@
+{
+  "author": "",
+  "category": "Movement",
+  "dimension": "",
+  "extensionNamespace": "",
+  "fullName": "WASD",
+  "gdevelopVersion": "",
+  "helpPath": "",
+  "iconUrl": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0ibWRpLWtleWJvYXJkLW91dGxpbmUiIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNNCw1QTIsMiAwIDAsMCAyLDdWMTdBMiwyIDAgMCwwIDQsMTlIMjBBMiwyIDAgMCwwIDIyLDE3VjdBMiwyIDAgMCwwIDIwLDVINE00LDdIMjBWMTdINFY3TTUsOFYxMEg3VjhINU04LDhWMTBIMTBWOEg4TTExLDhWMTBIMTNWOEgxMU0xNCw4VjEwSDE2VjhIMTRNMTcsOFYxMEgxOVY4SDE3TTUsMTFWMTNIN1YxMUg1TTgsMTFWMTNIMTBWMTFIOE0xMSwxMVYxM0gxM1YxMUgxMU0xNCwxMVYxM0gxNlYxMUgxNE0xNywxMVYxM0gxOVYxMUgxN004LDE0VjE2SDE2VjE0SDhaIiAvPjwvc3ZnPg==",
+  "name": "WASD",
+  "previewIconUrl": "https://asset-resources.gdevelop.io/public-resources/Icons/a85f9403cea5bc52457e445d4a200ed226e30c3493c927aa015d0bbdf847df01_keyboard-outline.svg",
+  "shortDescription": "Adds quick wasd control for your top down character.",
+  "version": "0.1",
+  "description": "Made by FaalenGames",
+  "tags": [
+    "wasd",
+    "movement"
+  ],
+  "authorIds": [],
+  "dependencies": [],
+  "globalVariables": [],
+  "sceneVariables": [],
+  "eventsFunctions": [],
+  "eventsFunctionsFolderStructure": {
+    "folderName": "__ROOT"
+  },
+  "eventsBasedBehaviors": [
+    {
+      "description": "",
+      "fullName": "",
+      "helpPath": "",
+      "iconUrl": "",
+      "name": "WASD",
+      "objectType": "",
+      "previewIconUrl": "",
+      "eventsFunctions": [
+        {
+          "fullName": "",
+          "functionType": "Action",
+          "name": "doStepPreEvents",
+          "sentence": "",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "KeyFromTextPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "\"a\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "TopDownMovementBehavior::SimulateControl"
+                  },
+                  "parameters": [
+                    "Object",
+                    "TopDownMovement",
+                    "\"Left\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "KeyFromTextPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "\"d\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "TopDownMovementBehavior::SimulateControl"
+                  },
+                  "parameters": [
+                    "Object",
+                    "TopDownMovement",
+                    "\"Right\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "KeyFromTextPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "\"w\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "TopDownMovementBehavior::SimulateControl"
+                  },
+                  "parameters": [
+                    "Object",
+                    "TopDownMovement",
+                    "\"Up\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "KeyFromTextPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "\"s\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "TopDownMovementBehavior::SimulateControl"
+                  },
+                  "parameters": [
+                    "Object",
+                    "TopDownMovement",
+                    "\"Down\""
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "description": "Object",
+              "name": "Object",
+              "type": "object"
+            },
+            {
+              "description": "Behavior",
+              "name": "Behavior",
+              "supplementaryInformation": "WASD::WASD",
+              "type": "behavior"
+            }
+          ],
+          "objectGroups": []
+        }
+      ],
+      "eventsFunctionsFolderStructure": {
+        "folderName": "__ROOT",
+        "children": [
+          {
+            "functionName": "doStepPreEvents"
+          }
+        ]
+      },
+      "propertyDescriptors": [
+        {
+          "value": "",
+          "type": "Behavior",
+          "label": "Top-down movement (4 or 8 directions)",
+          "extraInformation": [
+            "TopDownMovementBehavior::TopDownMovementBehavior"
+          ],
+          "choices": [],
+          "name": "TopDownMovement"
+        }
+      ],
+      "propertiesFolderStructure": {
+        "folderName": "__ROOT",
+        "children": [
+          {
+            "propertyName": "TopDownMovement"
+          }
+        ]
+      }
+    }
+  ],
+  "eventsBasedObjects": []
+}
